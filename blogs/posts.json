@@ -7,13 +7,6 @@
     "body": "I kept forgetting who I owed and how much I’d already paid back, so I started scribbling notes and spreadsheets. That quickly got messy, and I wanted something I could open on my phone and update in seconds. I decided to build a small web app: a place to create “loans,” add amounts and labels, and see totals update automatically.\n\nI built it with PHP and a simple database so I could host it myself and keep full control of the data. I started with the basics: registration and login, a dashboard showing a grand total, and loan detail pages where entries can be marked as paid. From there, I added currency settings so it works across different countries, and a profile system where users can set a name and username.\n\nTo help new users get started quickly, I wrote a short user guide that explains how to register, track loans, and use the app’s main features.\n\nLoan Note is the app I use to stop losing track of who owes what—and the one I built step by step to solve that exact problem."
   },
   {
-    "title": "Thoughts on Game Design and User Experience",
-    "date": "2025-01-25",
-    "slug": "2025-01-25",
-    "excerpt": "The best games share something in common: they respect the player's time and attention. Whether it's a quick mobile game or a hundred-hour RPG, good design is about clear feedback, meaningful choices, and knowing when to get out of the way.",
-    "body": "The best games share something in common: they respect the player's time and attention. Whether it's a quick mobile game or a hundred-hour RPG, good design is about clear feedback, meaningful choices, and knowing when to get out of the way.\n\nI've been thinking a lot about this while playing through some recent releases. The good ones let you understand what's happening without overwhelming you with menus and tutorials. They give you room to experiment and learn at your own pace. Bad ones are the opposite—they either hold your hand too much or throw you into the deep end without any compass.\n\nI think this applies to web design too. The same principles of clarity, respect, and thoughtfulness make a difference. It's why I try to keep things simple on my own projects."
-  },
-  {
     "title": "Favorite Films That Made an Impression",
     "date": "2025-01-18",
     "slug": "2025-01-18",
