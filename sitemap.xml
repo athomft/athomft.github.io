@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost/index.html</loc>
+    <loc>https://athomft.net/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost/blogs.html</loc>
+    <loc>https://athomft.net/blogs.html</loc>
   </url>
   <url>
-    <loc>http://localhost/contact.html</loc>
+    <loc>https://athomft.net/contact.html</loc>
   </url>
 </urlset>
