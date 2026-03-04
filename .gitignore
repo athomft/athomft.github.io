@@ -1,0 +1,36 @@
+# OS-generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Spotlight-V100/
+.Trashes/
+ehthumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local environment files (if used)
+.env
+.env.*
+!.env.example
+
+# Dependency and build folders (if tooling is added later)
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+out/
