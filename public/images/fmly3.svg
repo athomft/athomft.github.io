@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 990 520" width="990" height="520">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#0f172a" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="treeGlow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="tileShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.5"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#38bdf8" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="tileBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="tileBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="990" height="520" fill="url(#bgGlow)"/>
+
+  <!-- Subtle grid/constellation connection lines in the background -->
+  <g stroke="#334155" stroke-opacity="0.25" stroke-width="1.5" stroke-dasharray="4 4">
+    <line x1="160" y1="260" x2="355" y2="260"/>
+    <line x1="635" y1="260" x2="830" y2="260"/>
+    <line x1="220" y1="160" x2="370" y2="220"/>
+    <line x1="770" y1="160" x2="620" y2="220"/>
+    <line x1="220" y1="360" x2="370" y2="300"/>
+    <line x1="770" y1="360" x2="620" y2="300"/>
+  </g>
+  <!-- Background node dots -->
+  <circle cx="160" cy="260" r="4" fill="#38bdf8" fill-opacity="0.4"/>
+  <circle cx="220" cy="160" r="3" fill="#94a3b8" fill-opacity="0.4"/>
+  <circle cx="220" cy="360" r="3" fill="#94a3b8" fill-opacity="0.4"/>
+  <circle cx="830" cy="260" r="4" fill="#38bdf8" fill-opacity="0.4"/>
+  <circle cx="770" cy="160" r="3" fill="#94a3b8" fill-opacity="0.4"/>
+  <circle cx="770" cy="360" r="3" fill="#94a3b8" fill-opacity="0.4"/>
+
+  <!-- Soft Blue Glow Behind Icon -->
+  <circle cx="495" cy="260" r="220" fill="url(#treeGlow)"/>
+
+  <!-- Center App Icon Tile -->
+  <g filter="url(#tileShadow)">
+    <rect x="365" y="130" width="260" height="260" rx="58" fill="url(#tileBg)"/>
+    <rect x="365.75" y="130.75" width="258.5" height="258.5" rx="57.25" fill="none" stroke="url(#tileBorder)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Fmly3 Tree Mark (scaled to fit nicely inside tile) -->
+  <g transform="translate(365, 130) scale(2.03125)">
+    <!-- Base / Mound line -->
+    <path d="M40 98C52 94 76 94 88 98" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Tree Trunk -->
+    <path d="M58 96C60 84 61 74 54 62C60 66 68 66 74 62C67 74 68 84 70 96Z" fill="#f8fafc"/>
+    
+    <!-- Top Crown (Sky Blue) -->
+    <circle cx="64" cy="40" r="18" fill="#38bdf8"/>
+    
+    <!-- Left Leaf/Person Node -->
+    <circle cx="48" cy="56" r="16" fill="#f8fafc"/>
+    
+    <!-- Right Leaf/Person Node -->
+    <circle cx="80" cy="56" r="16" fill="#f8fafc"/>
+    
+    <!-- Center Core Dot -->
+    <circle cx="64" cy="52" r="5" fill="#0f172a"/>
+  </g>
+</svg>

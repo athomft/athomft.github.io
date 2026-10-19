@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 export const HomeApp: React.FC = () => {
   return (
@@ -29,39 +30,39 @@ export const HomeApp: React.FC = () => {
             </p>
           </div>
 
-          {/* Card 2: Steam */}
+          {/* Card 2: Fmly3 */}
           <div className="project-card">
-            <a href="https://steamcommunity.com/id/athomft/" className="project-img-link" aria-label="View Steam Profile">
+            <a href="https://fmly3.athomft.com" className="project-img-link" aria-label="View Fmly3 Project">
               <img 
-                src="images/gamer-in-action.png" 
-                alt="Casual gaming profile - Dota 2 Herald ranked player" 
+                src="images/fmly3.svg" 
+                alt="Fmly3 - Web app for building and exploring family trees" 
                 className="project-card-img" 
                 width="495" 
                 height="260" 
                 loading="lazy" 
               />
             </a>
-            <h3>Steam Gaming</h3>
+            <h3>Fmly3</h3>
             <p>
-              I’m just a casual gamer who plays purely for fun, not for trophies or pro-level glory, and most of my time is happily spent in Dota 2 grinding away in the Herald ranks, where every match is a mix of chaos, laughs, clutch moments, and learning from my mistakes, enjoying the game for what it is rather than stressing over wins and losses.
+              Fmly3 is a collaborative web app for building and exploring family trees. Add relatives, connect complex relationships, and preserve family memories and milestones together. It features interactive visual tree graphs, timelines, maps, and secure sharing across devices.
             </p>
           </div>
 
-          {/* Card 3: Reelgood */}
+          {/* Card 3: Household Board */}
           <div className="project-card">
-            <a href="https://reelgood.com/profile/athomft" className="project-img-link" aria-label="View Movie Profile">
+            <a href="https://household-todo.athomft.com" className="project-img-link" aria-label="View Household Board Project">
               <img 
-                src="images/movie-enthusiast.png" 
-                alt="Movie and TV show ratings and reviews profile" 
+                src="images/household-todo.svg" 
+                alt="Household Board - Mobile-first shared household to-do coordination" 
                 className="project-card-img" 
                 width="495" 
                 height="260" 
                 loading="lazy" 
               />
             </a>
-            <h3>Reelgood Profile</h3>
+            <h3>Household Board</h3>
             <p>
-              I’m really into movies and TV shows—I love finding a good series to binge or a great film to get lost in. Whether it’s something exciting, funny, or just easy to watch, I enjoy discovering new stories and talking about them after. It’s just one of my favorite ways to relax and have fun.
+              Household Board is a mobile-first coordination web app for roommates, families, and shared house chores. Share a single instant link with zero login or sign-up required, organize tasks, and keep everyone on the same page seamlessly.
             </p>
           </div>
         </div>
@@ -147,6 +148,8 @@ export const HomeApp: React.FC = () => {
           </li>
         </ul>
       </section>
+
+      <Footer />
     </div>
   );
 };
