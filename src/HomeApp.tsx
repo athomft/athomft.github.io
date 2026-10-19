@@ -1,6 +1,5 @@
 import React from 'react';
 import { Header } from './components/Header';
-import { Footer } from './components/Footer';
 
 export const HomeApp: React.FC = () => {
   return (
@@ -148,8 +147,6 @@ export const HomeApp: React.FC = () => {
           </li>
         </ul>
       </section>
-
-      <Footer />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Header } from './components/Header';
-import { Footer } from './components/Footer';
 
 export const ContactApp: React.FC = () => {
   return (
@@ -23,8 +22,6 @@ export const ContactApp: React.FC = () => {
           <a href="mailto:atho.mft@gmail.com">atho.mft@gmail.com</a>
         </p>
       </section>
-
-      <Footer />
     </div>
   );
 };

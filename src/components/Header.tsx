@@ -2,7 +2,7 @@ import React from 'react';
 
 interface HeaderProps {
   showIntro?: boolean;
-  currentPage: 'home' | 'blogs' | 'contact';
+  currentPage: 'home' | 'contact';
 }
 
 export const Header: React.FC<HeaderProps> = ({ showIntro = false, currentPage }) => {
@@ -38,27 +38,10 @@ export const Header: React.FC<HeaderProps> = ({ showIntro = false, currentPage }
 
       <p className="contact">
         {currentPage === 'home' && (
-          <>
-            <a href="contact.html">Contact me</a>
-            {' • '}
-            <a href="blogs.html">Blogs</a>
-          </>
-        )}
-        {currentPage === 'blogs' && (
-          <>
-            <a href="index.html">Home</a>
-            {' • '}
-            <a href="contact.html">Contact me</a>
-            {' • '}
-            <a href="blogs.html">Blogs</a>
-          </>
+          <a href="contact.html">Contact me</a>
         )}
         {currentPage === 'contact' && (
-          <>
-            <a href="index.html">Home</a>
-            {' • '}
-            <a href="blogs.html">Blogs</a>
-          </>
+          <a href="index.html">Home</a>
         )}
       </p>
     </header>
