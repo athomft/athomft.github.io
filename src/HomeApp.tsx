@@ -16,7 +16,7 @@ export const HomeApp: React.FC = () => {
           <div className="project-card">
             <a href="https://myloannote.net" className="project-img-link" aria-label="View Loan Note Project">
               <img 
-                src="images/loannote.png" 
+                src="images/loannote.svg" 
                 alt="Loan Note - Web app for tracking money you lend or borrow" 
                 className="project-card-img" 
                 width="495" 

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 990 520" width="990" height="520">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#083344" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#090e17" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="1"/>
+    </radialGradient>
+    <radialGradient id="cyanGlow" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="tileShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#06b6d4" flood-opacity="0.25"/>
+    </filter>
+    <linearGradient id="tileBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#334155" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="990" height="520" fill="url(#bgGlow)"/>
+
+  <!-- Subtle financial ledger / accounting grid lines in background -->
+  <g stroke="#1e293b" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="4 4">
+    <line x1="140" y1="210" x2="330" y2="210"/>
+    <line x1="140" y1="260" x2="350" y2="260"/>
+    <line x1="140" y1="310" x2="310" y2="310"/>
+    <line x1="660" y1="210" x2="850" y2="210"/>
+    <line x1="640" y1="260" x2="850" y2="260"/>
+    <line x1="680" y1="310" x2="850" y2="310"/>
+  </g>
+
+  <!-- Currency / Ledger ledger dots -->
+  <circle cx="140" cy="210" r="4" fill="#06b6d4" fill-opacity="0.4"/>
+  <circle cx="200" cy="260" r="3" fill="#94a3b8" fill-opacity="0.4"/>
+  <circle cx="140" cy="310" r="4" fill="#06b6d4" fill-opacity="0.4"/>
+  <circle cx="850" cy="210" r="4" fill="#06b6d4" fill-opacity="0.4"/>
+  <circle cx="790" cy="260" r="3" fill="#94a3b8" fill-opacity="0.4"/>
+  <circle cx="850" cy="310" r="4" fill="#06b6d4" fill-opacity="0.4"/>
+
+  <!-- Soft Cyan Glow Behind Icon -->
+  <circle cx="495" cy="260" r="220" fill="url(#cyanGlow)"/>
+
+  <!-- Center App Icon Tile (from official Loan Note logo.svg) -->
+  <g filter="url(#tileShadow)" transform="translate(365, 130) scale(5.416667)">
+    <!-- Base Tile -->
+    <rect width="48" height="48" rx="12" fill="#090e17" />
+    <rect x="0.75" y="0.75" width="46.5" height="46.5" rx="11.25" stroke="url(#tileBorder)" stroke-width="1.2" />
+
+    <!-- Ledger Notebook Body with Folded Top-Right Corner -->
+    <path d="M12 12C12 10.8954 12.8954 10 14 10H28L36 18V36C36 37.1046 35.1046 38 34 38H14C12.8954 38 12 37.1046 12 36V12Z" fill="#0f172a" stroke="#334155" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Fold Flap -->
+    <path d="M28 10V18H36" fill="#1e293b" stroke="#334155" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Spine Strip -->
+    <path d="M12 12C12 10.8954 12.8954 10 14 10H16.5V38H14C12.8954 38 12 37.1046 12 36V12Z" fill="#06b6d4" />
+
+    <!-- 3 Notebook Binder Rings -->
+    <rect x="10.5" y="15" width="4" height="2" rx="1" fill="#e2e8f0" />
+    <rect x="10.5" y="23" width="4" height="2" rx="1" fill="#e2e8f0" />
+    <rect x="10.5" y="31" width="4" height="2" rx="1" fill="#e2e8f0" />
+
+    <!-- Ledger Rows -->
+    <!-- Header / Account line -->
+    <line x1="20" y1="18" x2="25.5" y2="18" stroke="#94a3b8" stroke-width="2" stroke-linecap="round"/>
+    <!-- Entry record line -->
+    <line x1="20" y1="24.5" x2="31.5" y2="24.5" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+    <!-- Balance total line -->
+    <line x1="20" y1="31" x2="27" y2="31" stroke="#06b6d4" stroke-width="2" stroke-linecap="round"/>
+    <!-- Balance settled node -->
+    <circle cx="31" cy="31" r="1.5" fill="#06b6d4" />
+  </g>
+</svg>
